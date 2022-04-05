@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
 .pokedex-container {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     position: absolute;
     left: 10%;
-    top: 0%;
 }
 
 .pokemon-card-container {
@@ -21,12 +22,12 @@
 
 .pokemon-name-container {
     width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
     
 }
 
