@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import { useContext } from 'react';
+import { RegionContext } from '../Helper/Context';
 import './Header.css';
 
-export default function Header() {
-    //init this to the state
-    const [region, setRegion] = useState("kanto");
-    //setting the region based on the user input 
-    const handleClick = game => setRegion(game);
-    //divs should have different styling based on the region
+export default function Header() { 
+    const { region, setRegion } = useContext(RegionContext);
+    
+    function handleClick(game) {
+        setRegion(game);
+    };
+
     return (
         <div className='header-container'>
             <div className={region === "kanto" ? "selected" : "not-selected"} onClick={() => handleClick('kanto')}>Kanto</div>
